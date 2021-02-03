@@ -7,7 +7,7 @@ class Song
   extend Memorable
   extend Findable
 
-  @@all = []
+  @@songs = []
 
   def initialize
     @@all << self
@@ -18,7 +18,7 @@ class Song
   end
 
   def self.all
-    @@all
+    @@songs
   end
 
   def artist=(artist)
